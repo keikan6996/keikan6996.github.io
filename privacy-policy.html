@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:;" />
+  <title>Privacy Policy — PantryArk: Food &amp; FIFO Prep (com.pantryark.app)</title>
+  <style>
+    :root {
+      --bg: #090D10;
+      --surface: #121920;
+      --elevated: #1A242D;
+      --border: #283542;
+      --text-primary: #F1F5F9;
+      --text-secondary: #94A3B8;
+      --accent-mint: #34D399;
+      --accent-emerald: #10B981;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #F8FAFC;
+        --surface: #FFFFFF;
+        --elevated: #F1F5F9;
+        --border: #CBD5E1;
+        --text-primary: #0F172A;
+        --text-secondary: #475569;
+        --accent-mint: #059669;
+        --accent-emerald: #047857;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 64px;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      line-height: 1.65;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--elevated);
+      border: 1px solid var(--accent-mint);
+      color: var(--accent-mint);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 8px; line-height: 1.3; }
+    .meta {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-bottom: 28px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+    }
+    h2 { font-size: 1.2rem; margin-top: 0; color: var(--accent-mint); }
+    ul, ol { padding-left: 20px; margin-bottom: 0; }
+    li { margin-bottom: 8px; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--elevated);
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 0.88em;
+    }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.93rem; }
+    th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: var(--elevated); font-weight: 600; }
+    footer { text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="badge">🛡 OFFLINE VAULT · ZERO CLOUD BACKEND</div>
+    <h1>Chính Sách Quyền Riêng Tư — PantryArk</h1>
+    <div class="meta">
+      Package ID: com.pantryark.app · Phiên bản: 1.1.0+ · Ngày hiệu lực: 12/11/2026
+    </div>
+
+    <section>
+      <h2>1. Cam Kết Cốt Lõi: Zero Cloud Backend — Kho Dự Trữ Nằm 100% Trên Thiết Bị</h2>
+      <p>
+        <strong>PantryArk</strong> (<code>PantryArk: Food &amp; FIFO Prep</code>) là ứng dụng quản lý kho lương thực dự trữ khẩn cấp (<code>FIFO</code>) và ba lô sơ tán hộ gia đình (<code>Bug-Out Bag</code>) vận hành theo chuẩn bảo mật thông tin tác chiến (<strong>OPSEC</strong>):
+      </p>
+      <ul>
+        <li><strong>Không máy chủ riêng (<code>Zero Developer Servers</code>):</strong> Nhà phát triển không vận hành bất kỳ máy chủ đám mây nào. <code>0 byte</code> dữ liệu hàng hóa, hạn dùng, định mức calo/nước hay mật khẩu sao lưu của bạn từng rời khỏi thiết bị.</li>
+        <li><strong>Không tài khoản, không định danh cá nhân:</strong> Không yêu cầu đăng ký tài khoản, email, số điện thoại, họ tên hay địa chỉ nhà.</li>
+        <li><strong>Không định vị GPS &amp; cảm biến nhạy cảm:</strong> Quyền vị trí (<code>LOCATION</code>), ghi âm (<code>RECORD_AUDIO</code>), danh bạ (<code>CONTACTS</code>) và trạng thái cuộc gọi (<code>READ_PHONE_STATE</code>) bị gỡ bỏ triệt để ở cấp Manifest (<code>tools:node="remove"</code>).</li>
+        <li><strong>Hoạt động 100% khi mất mạng hoàn toàn:</strong> Toàn bộ tính năng tính toán số ngày sinh tồn, quét mã vạch cục bộ <code>ZXing</code>, xuất <code>PDF Manifest</code> và sao lưu <code>AES-256-GCM</code> đều chạy mượt 100% ngay cả ở Chế độ Máy bay.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Dữ Liệu Được Lưu Trữ Cục Bộ Trên Thiết Bị Của Bạn</h2>
+      <ul>
+        <li><strong>Danh mục tồn kho &amp; Ba lô BOB:</strong> Lưu độc quyền trong cơ sở dữ liệu nội bộ <code>SQLite WAL</code> (<code>/data/data/com.pantryark.app/</code>) với cờ <code>android:allowBackup="false"</code> ngăn tự động tải bản sao chưa mã hóa lên đám mây.</li>
+        <li><strong>Khóa ứng dụng nội bộ:</strong> Mã PIN chỉ được lưu dưới dạng băm mật mã có muối (<code>PBKDF2-HMAC-SHA256</code> + <code>16-byte Salt</code>); vân tay được xử lý trực tiếp bởi Android <code>BiometricPrompt</code>.</li>
+        <li><strong>Sao lưu mã hóa <code>.pantryark</code>:</strong> Mã hóa chuẩn <code>AES-256-GCM</code> (<code>120,000</code> vòng lặp PBKDF2) lưu trực tiếp vào thư mục/USB OTG bạn chọn qua <code>SAF</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Dịch Vụ Google Khi Có Mạng (Google AdMob &amp; Google Play Billing)</h2>
+      <ul>
+        <li><strong>Google Play Billing (<code>com.android.vending.BILLING</code>):</strong> Xử lý nâng cấp tùy chọn (<code>Remove Ads</code>, <code>VIP Pro Yearly</code>, <code>VIP Pro Lifetime</code>) và khôi phục giao dịch trực tiếp qua Google Play Store.</li>
+        <li><strong>Google AdMob &amp; Google UMP Consent (<code>AD_ID</code>):</strong> Phiên bản miễn phí hiển thị quảng cáo không xâm lấn khi có mạng (kèm hộp thoại đồng ý GDPR UMP tại khu vực EEA/UK). SDK AdMob có thể xử lý Advertising ID, địa chỉ IP tạm thời và thông tin chẩn đoán quảng cáo theo Chính sách quyền riêng tư của Google. Khi nâng cấp <code>Remove Ads</code> / <code>VIP Pro</code> hoặc khi Offline, mọi yêu cầu quảng cáo bị tắt hoàn toàn.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Minh Bạch Quyền Hệ Thống Android</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Quyền hệ thống</th>
+              <th>Loại quyền</th>
+              <th>Mục đích sử dụng duy nhất</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>CAMERA</code></td>
+              <td>Xin phép khi dùng</td>
+              <td>Quét mã vạch sản phẩm cục bộ bằng <code>ZXing</code> trên RAM. Không bao giờ lưu ảnh hay quay video.</td>
+            </tr>
+            <tr>
+              <td><code>POST_NOTIFICATIONS</code></td>
+              <td>Xin phép khi dùng</td>
+              <td>Phát thông báo nhắc hạn sử dụng cục bộ (30 ngày / 7 ngày) qua WorkManager.</td>
+            </tr>
+            <tr>
+              <td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>AD_ID</code>, <code>BILLING</code></td>
+              <td>Quyền thường</td>
+              <td>Xác thực giao dịch Google Play Billing và hiển thị quảng cáo Google AdMob ở bản miễn phí khi có mạng (0 byte dữ liệu tồn kho được gửi đi).</td>
+            </tr>
+            <tr>
+              <td><code>RECEIVE_BOOT_COMPLETED</code>, <code>USE_BIOMETRIC</code>, <code>VIBRATE</code></td>
+              <td>Quyền thường</td>
+              <td>Khôi phục lịch kiểm tra hạn dùng nội bộ sau khởi động lại, mở khóa sinh trắc học cục bộ và rung xúc giác nhẹ.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. English Summary (Google Play Data Safety Alignment)</h2>
+      <ul>
+        <li><strong>100% Local Vault Storage:</strong> All pantry batches, FIFO expiry dates, household rations, PIN hashes, and Bug-Out Bag weights remain strictly inside local device storage (<code>allowBackup="false"</code>) with optional user-encrypted <code>AES-256-GCM</code> <code>.pantryark</code> backups. Zero inventory data is ever uploaded to developer servers.</li>
+        <li><strong>Hardware OPSEC:</strong> Location/GPS, Microphone, Contacts, and Phone State permissions are explicitly stripped from the manifest.</li>
+        <li><strong>Online Free Tier &amp; Billing:</strong> Uses <strong>Google Play Billing</strong> for optional VIP/Remove-Ads upgrades and <strong>Google AdMob + Google UMP</strong> (Advertising ID &amp; ad diagnostics) only when online in the free tier.</li>
+      </ul>
+    </section>
+
+    <footer>
+      PantryArk · Offline Emergency Pantry &amp; Bug-Out Bag Manager · Support: support@pantryark.app
+    </footer>
+  </main>
+</body>
+</html>
